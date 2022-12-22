@@ -9,13 +9,30 @@
   </head>
 
   <body>
-    <div class="flex-container">
+    <div class="container">
       <h1>Rock Paper Scissors</h1>
-      <button onclick="game()">Start Game</button>
-      <p>
-        This game is played in the console. On Windows/Linux press CTRL Shift J
-        to open the console. On mac, press Option J to open the console
-      </p>
+      <button onclick="resetgame()">Start Game</button>
+      <div class="score">
+      <h1 class="ties">Ties:0</h1>
+    </div>
+      <div class="winnerDiv">
+      <h1 class="winner">winner</h1>
+      <button class="reset" onclick="resetGame()">Play Again</button>
+    </div>
+      <div class="playerSection">
+        <h3 class="playerChoice"></h3>
+        <h3 class="playerScore">Score:0</h3>
+        <div class="playerButtons">
+          <button class="paper" id="paper">paper</button>
+          <button class="rock" id="rock">rock</button>
+          <button class="acissors" id="scissors">scissors</button>
+        </div>
+      </div>
+      <div class="computerSelection">
+      <h3 class="computerChoice"></h3>
+      <h3 class="computerScore">Score:0</h3>
+    </div>
+      
     </div>
   </body>
   <script src="main.js"></script>
