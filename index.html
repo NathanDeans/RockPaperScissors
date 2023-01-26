@@ -4,35 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
-    
+    <title>Rock Paper Scissors with UI</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="container">
-      <h1>Rock Paper Scissors</h1>
-      <button onclick="resetgame()">Start Game</button>
-      <div class="score">
-      <h1 class="ties">Ties:0</h1>
+    <div class="score">
+      <h1 class ="scoreboard">Scoreboard</h1>
+    <div class="scoring">
+      <h3 class="playerScore">Player Score: 0</h3>
+      <h3 class="computerScore">Computer Score: 0</h3>
+      <h3 class="ties">Ties: 0</h3>
     </div>
-      <div class="winnerDiv">
-      <h1 class="winner">winner</h1>
-      <button class="reset" onclick="resetGame()">Play Again</button>
     </div>
-      <div class="playerSection">
-        <h3 class="playerChoice"></h3>
-        <h3 class="playerScore">Score:0</h3>
-        <div class="playerButtons">
-          <button class="paper" id="paper">paper</button>
-          <button class="rock" id="rock">rock</button>
-          <button class="acissors" id="scissors">scissors</button>
-        </div>
-      </div>
-      <div class="computerSelection">
-      <h3 class="computerChoice"></h3>
-      <h3 class="computerScore">Score:0</h3>
-    </div>
+    
+    <div class="playerSection">
+      <h3 class="playerChoice"></h3>
       
+      <div class="playerImgs">
+        <img src="rock.png" alt="Rock" class="pImg" id="rock" />
+        <img src="paper.png" alt="Paper" class="pImg" id="paper" />
+        <img
+          src="scissors.png"
+          alt="Scissors"
+          class="pImg"
+          id="scissors" 
+        />
+      </div>
+    </div>
+    <div class="computerSection">
+      <h3 class="computerChoice"></h3>
+      
+      <div class="computerImgs">
+        <img src="rock.png" alt="Rock" class="rock" />
+        <img src="paper.png" alt="Paper" class="paper" />
+        <img src="scissors.png" alt="Scissors" class="scissors" />
+      </div>
+    </div>
+    <h1 class="winner"></h1>
+    <div class="winnerDiv">
+      
+      <button class="reset" onclick="resetGame()">Play Again?</button>
     </div>
   </body>
   <script src="main.js"></script>
