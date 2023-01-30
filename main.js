@@ -3,8 +3,8 @@ const choices = ["rock", "paper", "scissors"];
 
 function resetGame() {
   winners = [];
-  document.querySelector(".playerScore").textContent = "Score: 0";
-  document.querySelector(".computerScore").textContent = "Score: 0";
+  document.querySelector(".playerScore").textContent = "PLayer Score: 0";
+  document.querySelector(".computerScore").textContent = "Computer Score: 0";
   document.querySelector(".ties").textContent = "Ties: 0";
   document.querySelector(".winner").textContent = "";
   document.querySelector(".playerChoice").textContent = "";
@@ -72,10 +72,10 @@ function displayRound(playerChoice, computerChoice, winner) {
 
 function displayRoundWinner(winner) {
   if (winner == "Player") {
-    document.querySelector(".winner").textContent = "You won the Round!";
+    document.querySelector(".winner").textContent = "Nice one! You won the Round!";
   } else if (winner == "Computer") {
     document.querySelector(".winner").textContent =
-      "The Computer won the Round";
+      "Sorry, the Computer won the Round";
   } else {
     document.querySelector(".winner").textContent = "The Round was a tie";
   }
